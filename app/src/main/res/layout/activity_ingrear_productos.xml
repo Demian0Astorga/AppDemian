@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/nomProducto"
         android:layout_width="361dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.07" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/precio"
         android:layout_width="360dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -55,10 +55,11 @@
         tools:layout_editor_absoluteY="483dp" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/categoriaProduct"
         android:layout_width="356dp"
         android:layout_height="40dp"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="542dp" />
+        tools:layout_editor_absoluteY="542dp"
+        android:entries="@array/Categorias"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

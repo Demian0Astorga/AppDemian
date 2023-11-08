@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AppDemian</string>
+
+    <string-array name="Categorias">
+        <item> Seleccione Categoría de su Producto </item>
+        <item> Mesas de Centro </item>
+        <item> Escritorios </item>
+        <item> Ropa </item>
+        <item> Amigurumis </item>
+        <item> Macrame </item>
+        <item> Utencilios de Cocina </item>
+    </string-array>
 </resources>
