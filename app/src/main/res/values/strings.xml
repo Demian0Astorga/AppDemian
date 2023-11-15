@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">AppDemian</string>
+
+    <string-array name="Categorias">
+        <item> Muebles </item>
+        <item> Ropa </item>
+        <item> Utencilios de Cocina </item>
+        <item> Amigurumis </item>
+    </string-array>
+
+    <string-array name="EstadosProducto">
+        <item> Dispinible </item>
+        <item> Reservado </item>
+        <item> No Disponible </item>
+    </string-array>
 </resources>

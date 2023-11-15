@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1003821939228",
+    "firebase_url": "https://emprende-6f819-default-rtdb.firebaseio.com",
+    "project_id": "emprende-6f819",
+    "storage_bucket": "emprende-6f819.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003821939228:android:b43a1dc46eb22d34c2bdd9",
+        "android_client_info": {
+          "package_name": "com.example.appdemian"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClKgJnoWxqP1PaXxGsd0NMpbq-Lp1MG7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,6 @@
 plugins {
-    id("com.android.application")
+    id("com.android.application") //plugin Predeterminado
+    id("com.google.gms.google-services") //plugin Agregado
 }
 
 android {
@@ -36,4 +37,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(platform("com.google.firebase:firebase-bom:32.5.0")) //Codigo Agregado
+    implementation("com.google.firebase:firebase-analytics") //Codigo Agregado
+    implementation("com.google.firebase:firebase-database"); //Codigo Agregado
 }
