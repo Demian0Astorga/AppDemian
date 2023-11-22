@@ -6,43 +6,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#b88b5c"
-    tools:context=".CuentaNuevaApp">
+    tools:context=".CuentaNuevaCliente">
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#d0ab7a"
-        android:text="Crear Cuenta Nueva"
+        android:text="Cuenta Nueva Cliente"
         android:textColor="@color/material_dynamic_neutral20"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d0ab7a"
-        android:text="Ingresar con:"
-        android:textColor="@color/material_dynamic_neutral20"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.095" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:background="#d0ab7a"
-        android:text="Nombre de Usuario/Emprendimiento"
+        android:text="Nombre de Usuario"
         android:textColor="@color/material_dynamic_neutral20"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -50,15 +37,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.328" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:ems="10"
-        android:hint="Ingrese el Nombre de Usuario o Empresa"
+        android:hint="Ingrese el Nombre de Usuario "
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,6 +90,7 @@
         android:layout_height="30dp"
         android:background="#d0ab7a"
         android:text="Contraseña"
+        android:textAllCaps="false"
         android:textColor="@color/material_dynamic_neutral20"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -138,43 +126,36 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#d0ab7a"
+        android:text="Teléfono"
+        android:textColor="@color/material_dynamic_neutral20"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="195dp"
-        android:layout_height="16dp"
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese su Número de Contacto"
+        android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn3" />
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="168dp"
-        android:layout_height="165dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268"
-        tools:srcCompat="@drawable/logoFaceboock" />
-
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="204dp"
-        android:layout_height="160dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.274"
-        tools:srcCompat="@drawable/logoGmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintVertical_bias="0.202" />
 </androidx.constraintlayout.widget.ConstraintLayout>

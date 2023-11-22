@@ -2,42 +2,39 @@ package com.example.appdemian;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+public class MainActivity2 extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
-
-    private Button btn1, btn2;
-
+    private Button btnEmprendedor, btnComprador;
+    //HOLA x2
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
-        btn1 = (Button) findViewById(R.id.btnEmprendedor);
-        btn2 = (Button) findViewById(R.id.btnComprador);
+        btnEmprendedor = (Button) findViewById(R.id.btnEmprendedor);
+        btnComprador = (Button) findViewById(R.id.btnComprador);
 
         //Ir a página principal de la App (Donde se muestran los Productos)
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btnEmprendedor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, InicioApp.class);
+                Intent i = new Intent(MainActivity2.this, cuentaNuevaEmprendedor.class);
                 startActivity(i);
             }
         });
 
         //Ir a la Interfaz de Crear Cuneta Nueva
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btnComprador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i2 = new Intent(MainActivity.this, CuentaNuevaCliente.class);
+                Intent i2 = new Intent(MainActivity2.this, CuentaNuevaCliente.class);
                 startActivity(i2);
             }
         });
-    }
-
     }
 }
